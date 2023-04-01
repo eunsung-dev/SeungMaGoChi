@@ -7,31 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9191EB1329D01B3000DDFC93 /* SeungMaGoChi Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 9191EB1229D01B3000DDFC93 /* SeungMaGoChi Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		9191EB1829D01B3000DDFC93 /* SeungMaGoChiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9191EB1729D01B3000DDFC93 /* SeungMaGoChiApp.swift */; };
-		9191EB1A29D01B3000DDFC93 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9191EB1929D01B3000DDFC93 /* ContentView.swift */; };
-		9191EB1C29D01B3100DDFC93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9191EB1B29D01B3100DDFC93 /* Assets.xcassets */; };
-		9191EB1F29D01B3100DDFC93 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9191EB1E29D01B3100DDFC93 /* Preview Assets.xcassets */; };
+		910BCACB29D82ED4008BD507 /* SeungMaGoChi Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 910BCACA29D82ED4008BD507 /* SeungMaGoChi Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		910BCAD029D82ED4008BD507 /* SeungMaGoChiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910BCACF29D82ED4008BD507 /* SeungMaGoChiApp.swift */; };
+		910BCAD229D82ED4008BD507 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910BCAD129D82ED4008BD507 /* ContentView.swift */; };
+		910BCAD429D82ED5008BD507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910BCAD329D82ED5008BD507 /* Assets.xcassets */; };
+		910BCAD729D82ED5008BD507 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910BCAD629D82ED5008BD507 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9191EB1429D01B3000DDFC93 /* PBXContainerItemProxy */ = {
+		910BCACC29D82ED4008BD507 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 9191EB0629D01B3000DDFC93 /* Project object */;
+			containerPortal = 910BCABE29D82ED4008BD507 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9191EB1129D01B3000DDFC93;
+			remoteGlobalIDString = 910BCAC929D82ED4008BD507;
 			remoteInfo = "SeungMaGoChi Watch App";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		9191EB2529D01B3100DDFC93 /* Embed Watch Content */ = {
+		910BCADD29D82ED5008BD507 /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				9191EB1329D01B3000DDFC93 /* SeungMaGoChi Watch App.app in Embed Watch Content */,
+				910BCACB29D82ED4008BD507 /* SeungMaGoChi Watch App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -39,16 +39,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		9191EB0C29D01B3000DDFC93 /* SeungMaGoChi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeungMaGoChi.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9191EB1229D01B3000DDFC93 /* SeungMaGoChi Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeungMaGoChi Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9191EB1729D01B3000DDFC93 /* SeungMaGoChiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeungMaGoChiApp.swift; sourceTree = "<group>"; };
-		9191EB1929D01B3000DDFC93 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		9191EB1B29D01B3100DDFC93 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9191EB1E29D01B3100DDFC93 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		910BCAC429D82ED4008BD507 /* SeungMaGoChi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeungMaGoChi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		910BCACA29D82ED4008BD507 /* SeungMaGoChi Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SeungMaGoChi Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		910BCACF29D82ED4008BD507 /* SeungMaGoChiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeungMaGoChiApp.swift; sourceTree = "<group>"; };
+		910BCAD129D82ED4008BD507 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		910BCAD329D82ED5008BD507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		910BCAD629D82ED5008BD507 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		9191EB0F29D01B3000DDFC93 /* Frameworks */ = {
+		910BCAC729D82ED4008BD507 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -58,38 +58,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9191EB0529D01B3000DDFC93 = {
+		910BCABD29D82ED4008BD507 = {
 			isa = PBXGroup;
 			children = (
-				9191EB1629D01B3000DDFC93 /* SeungMaGoChi Watch App */,
-				9191EB0D29D01B3000DDFC93 /* Products */,
+				910BCACE29D82ED4008BD507 /* SeungMaGoChi Watch App */,
+				910BCAC529D82ED4008BD507 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		9191EB0D29D01B3000DDFC93 /* Products */ = {
+		910BCAC529D82ED4008BD507 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9191EB0C29D01B3000DDFC93 /* SeungMaGoChi.app */,
-				9191EB1229D01B3000DDFC93 /* SeungMaGoChi Watch App.app */,
+				910BCAC429D82ED4008BD507 /* SeungMaGoChi.app */,
+				910BCACA29D82ED4008BD507 /* SeungMaGoChi Watch App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9191EB1629D01B3000DDFC93 /* SeungMaGoChi Watch App */ = {
+		910BCACE29D82ED4008BD507 /* SeungMaGoChi Watch App */ = {
 			isa = PBXGroup;
 			children = (
-				9191EB1729D01B3000DDFC93 /* SeungMaGoChiApp.swift */,
-				9191EB1929D01B3000DDFC93 /* ContentView.swift */,
-				9191EB1B29D01B3100DDFC93 /* Assets.xcassets */,
-				9191EB1D29D01B3100DDFC93 /* Preview Content */,
+				910BCACF29D82ED4008BD507 /* SeungMaGoChiApp.swift */,
+				910BCAD129D82ED4008BD507 /* ContentView.swift */,
+				910BCAD329D82ED5008BD507 /* Assets.xcassets */,
+				910BCAD529D82ED5008BD507 /* Preview Content */,
 			);
 			path = "SeungMaGoChi Watch App";
 			sourceTree = "<group>";
 		};
-		9191EB1D29D01B3100DDFC93 /* Preview Content */ = {
+		910BCAD529D82ED5008BD507 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				9191EB1E29D01B3100DDFC93 /* Preview Assets.xcassets */,
+				910BCAD629D82ED5008BD507 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -97,30 +97,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9191EB0B29D01B3000DDFC93 /* SeungMaGoChi */ = {
+		910BCAC329D82ED4008BD507 /* SeungMaGoChi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9191EB2629D01B3100DDFC93 /* Build configuration list for PBXNativeTarget "SeungMaGoChi" */;
+			buildConfigurationList = 910BCADE29D82ED5008BD507 /* Build configuration list for PBXNativeTarget "SeungMaGoChi" */;
 			buildPhases = (
-				9191EB0A29D01B3000DDFC93 /* Resources */,
-				9191EB2529D01B3100DDFC93 /* Embed Watch Content */,
+				910BCAC229D82ED4008BD507 /* Resources */,
+				910BCADD29D82ED5008BD507 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				9191EB1529D01B3000DDFC93 /* PBXTargetDependency */,
+				910BCACD29D82ED4008BD507 /* PBXTargetDependency */,
 			);
 			name = SeungMaGoChi;
 			productName = SeungMaGoChi;
-			productReference = 9191EB0C29D01B3000DDFC93 /* SeungMaGoChi.app */;
+			productReference = 910BCAC429D82ED4008BD507 /* SeungMaGoChi.app */;
 			productType = "com.apple.product-type.application.watchapp2-container";
 		};
-		9191EB1129D01B3000DDFC93 /* SeungMaGoChi Watch App */ = {
+		910BCAC929D82ED4008BD507 /* SeungMaGoChi Watch App */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9191EB2229D01B3100DDFC93 /* Build configuration list for PBXNativeTarget "SeungMaGoChi Watch App" */;
+			buildConfigurationList = 910BCADA29D82ED5008BD507 /* Build configuration list for PBXNativeTarget "SeungMaGoChi Watch App" */;
 			buildPhases = (
-				9191EB0E29D01B3000DDFC93 /* Sources */,
-				9191EB0F29D01B3000DDFC93 /* Frameworks */,
-				9191EB1029D01B3000DDFC93 /* Resources */,
+				910BCAC629D82ED4008BD507 /* Sources */,
+				910BCAC729D82ED4008BD507 /* Frameworks */,
+				910BCAC829D82ED4008BD507 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -128,28 +128,28 @@
 			);
 			name = "SeungMaGoChi Watch App";
 			productName = "SeungMaGoChi Watch App";
-			productReference = 9191EB1229D01B3000DDFC93 /* SeungMaGoChi Watch App.app */;
+			productReference = 910BCACA29D82ED4008BD507 /* SeungMaGoChi Watch App.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		9191EB0629D01B3000DDFC93 /* Project object */ = {
+		910BCABE29D82ED4008BD507 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1410;
 				LastUpgradeCheck = 1410;
 				TargetAttributes = {
-					9191EB0B29D01B3000DDFC93 = {
+					910BCAC329D82ED4008BD507 = {
 						CreatedOnToolsVersion = 14.1;
 					};
-					9191EB1129D01B3000DDFC93 = {
+					910BCAC929D82ED4008BD507 = {
 						CreatedOnToolsVersion = 14.1;
 					};
 				};
 			};
-			buildConfigurationList = 9191EB0929D01B3000DDFC93 /* Build configuration list for PBXProject "SeungMaGoChi" */;
+			buildConfigurationList = 910BCAC129D82ED4008BD507 /* Build configuration list for PBXProject "SeungMaGoChi" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -157,58 +157,58 @@
 				en,
 				Base,
 			);
-			mainGroup = 9191EB0529D01B3000DDFC93;
-			productRefGroup = 9191EB0D29D01B3000DDFC93 /* Products */;
+			mainGroup = 910BCABD29D82ED4008BD507;
+			productRefGroup = 910BCAC529D82ED4008BD507 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9191EB0B29D01B3000DDFC93 /* SeungMaGoChi */,
-				9191EB1129D01B3000DDFC93 /* SeungMaGoChi Watch App */,
+				910BCAC329D82ED4008BD507 /* SeungMaGoChi */,
+				910BCAC929D82ED4008BD507 /* SeungMaGoChi Watch App */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		9191EB0A29D01B3000DDFC93 /* Resources */ = {
+		910BCAC229D82ED4008BD507 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9191EB1029D01B3000DDFC93 /* Resources */ = {
+		910BCAC829D82ED4008BD507 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9191EB1F29D01B3100DDFC93 /* Preview Assets.xcassets in Resources */,
-				9191EB1C29D01B3100DDFC93 /* Assets.xcassets in Resources */,
+				910BCAD729D82ED5008BD507 /* Preview Assets.xcassets in Resources */,
+				910BCAD429D82ED5008BD507 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		9191EB0E29D01B3000DDFC93 /* Sources */ = {
+		910BCAC629D82ED4008BD507 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9191EB1A29D01B3000DDFC93 /* ContentView.swift in Sources */,
-				9191EB1829D01B3000DDFC93 /* SeungMaGoChiApp.swift in Sources */,
+				910BCAD229D82ED4008BD507 /* ContentView.swift in Sources */,
+				910BCAD029D82ED4008BD507 /* SeungMaGoChiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9191EB1529D01B3000DDFC93 /* PBXTargetDependency */ = {
+		910BCACD29D82ED4008BD507 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9191EB1129D01B3000DDFC93 /* SeungMaGoChi Watch App */;
-			targetProxy = 9191EB1429D01B3000DDFC93 /* PBXContainerItemProxy */;
+			target = 910BCAC929D82ED4008BD507 /* SeungMaGoChi Watch App */;
+			targetProxy = 910BCACC29D82ED4008BD507 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		9191EB2029D01B3100DDFC93 /* Debug */ = {
+		910BCAD829D82ED5008BD507 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -266,7 +266,7 @@
 			};
 			name = Debug;
 		};
-		9191EB2129D01B3100DDFC93 /* Release */ = {
+		910BCAD929D82ED5008BD507 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -317,7 +317,7 @@
 			};
 			name = Release;
 		};
-		9191EB2329D01B3100DDFC93 /* Debug */ = {
+		910BCADB29D82ED5008BD507 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -329,7 +329,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SeungMaGoChi;
-				INFOPLIST_KEY_NSMotionUsageDescription = "This app requires to access motion data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -348,7 +347,7 @@
 			};
 			name = Debug;
 		};
-		9191EB2429D01B3100DDFC93 /* Release */ = {
+		910BCADC29D82ED5008BD507 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -360,7 +359,6 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = SeungMaGoChi;
-				INFOPLIST_KEY_NSMotionUsageDescription = "This app requires to access motion data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -380,7 +378,7 @@
 			};
 			name = Release;
 		};
-		9191EB2729D01B3100DDFC93 /* Debug */ = {
+		910BCADF29D82ED5008BD507 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -396,7 +394,7 @@
 			};
 			name = Debug;
 		};
-		9191EB2829D01B3100DDFC93 /* Release */ = {
+		910BCAE029D82ED5008BD507 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -416,34 +414,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9191EB0929D01B3000DDFC93 /* Build configuration list for PBXProject "SeungMaGoChi" */ = {
+		910BCAC129D82ED4008BD507 /* Build configuration list for PBXProject "SeungMaGoChi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9191EB2029D01B3100DDFC93 /* Debug */,
-				9191EB2129D01B3100DDFC93 /* Release */,
+				910BCAD829D82ED5008BD507 /* Debug */,
+				910BCAD929D82ED5008BD507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9191EB2229D01B3100DDFC93 /* Build configuration list for PBXNativeTarget "SeungMaGoChi Watch App" */ = {
+		910BCADA29D82ED5008BD507 /* Build configuration list for PBXNativeTarget "SeungMaGoChi Watch App" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9191EB2329D01B3100DDFC93 /* Debug */,
-				9191EB2429D01B3100DDFC93 /* Release */,
+				910BCADB29D82ED5008BD507 /* Debug */,
+				910BCADC29D82ED5008BD507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9191EB2629D01B3100DDFC93 /* Build configuration list for PBXNativeTarget "SeungMaGoChi" */ = {
+		910BCADE29D82ED5008BD507 /* Build configuration list for PBXNativeTarget "SeungMaGoChi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9191EB2729D01B3100DDFC93 /* Debug */,
-				9191EB2829D01B3100DDFC93 /* Release */,
+				910BCADF29D82ED5008BD507 /* Debug */,
+				910BCAE029D82ED5008BD507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 9191EB0629D01B3000DDFC93 /* Project object */;
+	rootObject = 910BCABE29D82ED4008BD507 /* Project object */;
 }
