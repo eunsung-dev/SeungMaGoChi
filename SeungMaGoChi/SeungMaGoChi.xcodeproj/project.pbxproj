@@ -12,6 +12,7 @@
 		910BCAD229D82ED4008BD507 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 910BCAD129D82ED4008BD507 /* ContentView.swift */; };
 		910BCAD429D82ED5008BD507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910BCAD329D82ED5008BD507 /* Assets.xcassets */; };
 		910BCAD729D82ED5008BD507 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 910BCAD629D82ED5008BD507 /* Preview Assets.xcassets */; };
+		91C33CD129D839D400B8AE84 /* PedometerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C33CD029D839D400B8AE84 /* PedometerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,8 @@
 		910BCAD129D82ED4008BD507 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		910BCAD329D82ED5008BD507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		910BCAD629D82ED5008BD507 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		91C33CD029D839D400B8AE84 /* PedometerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PedometerViewModel.swift; sourceTree = "<group>"; };
+		91C33CD229D83C0D00B8AE84 /* SeungMaGoChi-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SeungMaGoChi-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +81,10 @@
 		910BCACE29D82ED4008BD507 /* SeungMaGoChi Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				91C33CD229D83C0D00B8AE84 /* SeungMaGoChi-Watch-App-Info.plist */,
 				910BCACF29D82ED4008BD507 /* SeungMaGoChiApp.swift */,
 				910BCAD129D82ED4008BD507 /* ContentView.swift */,
+				91C33CD029D839D400B8AE84 /* PedometerViewModel.swift */,
 				910BCAD329D82ED5008BD507 /* Assets.xcassets */,
 				910BCAD529D82ED5008BD507 /* Preview Content */,
 			);
@@ -193,6 +198,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				910BCAD229D82ED4008BD507 /* ContentView.swift in Sources */,
+				91C33CD129D839D400B8AE84 /* PedometerViewModel.swift in Sources */,
 				910BCAD029D82ED4008BD507 /* SeungMaGoChiApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -328,6 +334,7 @@
 				DEVELOPMENT_TEAM = TZGL6R438Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SeungMaGoChi-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SeungMaGoChi;
 				INFOPLIST_KEY_NSMotionUsageDescription = "This app requires to access motion data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
@@ -359,6 +366,7 @@
 				DEVELOPMENT_TEAM = TZGL6R438Y;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SeungMaGoChi-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = SeungMaGoChi;
 				INFOPLIST_KEY_NSMotionUsageDescription = "This app requires to access motion data";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
