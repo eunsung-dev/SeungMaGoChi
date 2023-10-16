@@ -9,9 +9,16 @@ import SwiftUI
 import Foundation
 import CoreMotion
 
+/*
+ [ToDo]
+    추후 리팩토링 필요
+ */
+
 class PedometerViewModel: ObservableObject {
     let pedometer = CMPedometer()
-    @AppStorage("startDate") var startDate: String = (UserDefaults.standard.string(forKey: "startDate") ?? "")
+    let now = Date().toInt()
+
+    @AppStorage("beforeDate") var beforeDate: Int = (UserDefaults.standard.integer(forKey: "beforeDate"))
 
     @Published var steps: Int?
     
@@ -21,33 +28,44 @@ class PedometerViewModel: ObservableObject {
     
     func initializePedometer() {
         print("initializePedometer() 호출")
-        guard let date = startDate.toDate() else { return }
-//            guard let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date()) else { return }
-        print("date: \(date)")
+                        
+        if beforeDate == 0 {
+            // 초기값 설정
+            beforeDate = now
+        }
+        else if beforeDate < now {
+            beforeDate = now
+            saveExp()
+        }
+        
+    }
+    
+    // MARK: 걷기 경험치 저장하는 메서드
+    func saveExp() {
+        print("saveExp() 호출")
         if isPedometerAvailable {
-            print("isPedometerAvailable check")
-            guard let date = startDate.toDate() else { return }
-            guard let startDate = Calendar.current.date(byAdding: .day, value: -7, to: Date()) else { return }
-            print("date: \(date)")
-            print("startDate: \(startDate)")
+            guard let startDate = Calendar.current.date(byAdding: .day, value: now-beforeDate, to: Date()) else { return }
+            
             pedometer.queryPedometerData(from: startDate, to: Date()) { (data, error) in
                 guard let data = data, error == nil else { return }
                 
-                self.steps = data.numberOfSteps.intValue
+                self.steps = data.numberOfSteps.intValue    // 걸음 수 저장
             }
         }
     }
+    
+    // MARK: 걷기 경험치 초기화하는 메서드
+    func clearExp() {
+        print("clearExp() 호출")
+
+    }
 }
 
-extension String {
-    func toDate() -> Date? { //"yyyy-MM-dd HH:mm:ss"
+extension Date {
+    func toInt() -> Int {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd HH:mm:ss"
+        dateFormatter.dateFormat = "yyyyMMdd"
         dateFormatter.timeZone = TimeZone(identifier: "UTC")
-        if let date = dateFormatter.date(from: self) {
-            return date
-        } else {
-            return nil
-        }
+        return Int(dateFormatter.string(from: self)) ?? -1
     }
 }
