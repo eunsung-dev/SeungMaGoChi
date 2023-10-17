@@ -12,13 +12,29 @@ struct ContentView: View {
     @ObservedObject var pedometerViewModel = PedometerViewModel()
     var body: some View {
         VStack {
-            Text(pedometerViewModel.steps != nil ? "\(pedometerViewModel.steps!) steps" : "")
+            HStack {
+                Spacer()
+                Button(action: {
+                }) {
+                    Circle()
+                        .fill(.blue)
+                }
+                .buttonStyle(PlainButtonStyle())
+                .frame(width: 35, height: 35)
+            }
+            Button(action: {
+            }) {
+                Circle()
+                    .fill(.blue)
+            }
+            .buttonStyle(PlainButtonStyle())
+
         }
         .padding()
         .onAppear {
-                DispatchQueue.main.async {
-                    pedometerViewModel.initializePedometer()
-                }
+            DispatchQueue.main.async {
+                pedometerViewModel.initializePedometer()
+            }
         }
     }
 }
