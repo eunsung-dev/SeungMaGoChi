@@ -34,7 +34,6 @@ class PedometerViewModel: ObservableObject {
             beforeDate = now
         }
         else if beforeDate < now {
-            beforeDate = now
             saveExp()
         }
         
@@ -50,6 +49,7 @@ class PedometerViewModel: ObservableObject {
                 guard let data = data, error == nil else { return }
                 
                 self.steps = data.numberOfSteps.intValue    // 걸음 수 저장
+                self.updateBeforeDate()
             }
         }
     }
@@ -58,6 +58,11 @@ class PedometerViewModel: ObservableObject {
     func clearExp() {
         print("clearExp() 호출")
 
+    }
+    
+    // MARK: beforeDate 업데이트하는 메서드
+    func updateBeforeDate() {
+        beforeDate = now
     }
 }
 
