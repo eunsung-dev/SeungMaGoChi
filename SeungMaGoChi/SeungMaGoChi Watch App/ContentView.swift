@@ -44,38 +44,39 @@ struct ContentView: View {
         }
         .padding()
         .onAppear(perform:{
-             DispatchQueue.main.async{
-                  pedometerViewModel.initializePedometer()
-             }
-         })
+            DispatchQueue.main.async{
+                pedometerViewModel.initializePedometer()
+            }
+            checkButtonStatus()
+        })
         
-       
-     }
-
-     func setLastClickedDate(date: Date) {
-         lastClickedInterval = date.timeIntervalSince1970
-     }
-
-     func getLastClickedDate() -> Date {
-         return Date(timeIntervalSince1970:lastClickedInterval)
-     }
-
-     func checkButtonStatus() {
-         let timeSinceLastClick = Date().timeIntervalSince(getLastClickedDate())
-
-         if timeSinceLastClick < 4*60*60 { // 4시간 경과 미만일 경우
-             isButtonDisabled = true
-
-             let remainingTime = 4*60*60 - timeSinceLastClick
-
-             DispatchQueue.main.asyncAfter(deadline:.now()+remainingTime) {
-                 self.isButtonDisabled=false
-             }
-
-         } else{
-              isButtonDisabled=false
-          }
-      }
+        
+    }
+    
+    func setLastClickedDate(date: Date) {
+        lastClickedInterval = date.timeIntervalSince1970
+    }
+    
+    func getLastClickedDate() -> Date {
+        return Date(timeIntervalSince1970:lastClickedInterval)
+    }
+    
+    func checkButtonStatus() {
+        let timeSinceLastClick = Date().timeIntervalSince(getLastClickedDate())
+        
+        if timeSinceLastClick < 4*60*60 { // 4시간 경과 미만일 경우
+            isButtonDisabled = true
+            
+            let remainingTime = 4*60*60 - timeSinceLastClick
+            
+            DispatchQueue.main.asyncAfter(deadline:.now()+remainingTime) {
+                self.isButtonDisabled=false
+            }
+            
+        } else{
+            isButtonDisabled=false
+        }
+    }
 }
 
 struct ContentView_Previews: PreviewProvider {
