@@ -10,10 +10,10 @@ import CoreMotion
 
 struct ContentView: View {
     @ObservedObject var pedometerViewModel = PedometerViewModel()
-    @State private var steps = 0
-    
+
     @AppStorage("lastClicked") private var lastClickedInterval: TimeInterval = .zero
-    
+    @AppStorage("steps") var steps: Int = (UserDefaults.standard.integer(forKey: "steps"))
+
     @State private var isButtonDisabled = false
     
     var body: some View {
@@ -21,6 +21,7 @@ struct ContentView: View {
             HStack {
                 Spacer()
                 Button(action: {
+                    steps += 100
                     self.setLastClickedDate(date: Date()) // 현재 시간 저장
                     checkButtonStatus()
                 }) {
@@ -48,6 +49,9 @@ struct ContentView: View {
                 pedometerViewModel.initializePedometer()
             }
             checkButtonStatus()
+        })
+        .onChange(of: steps, perform: { newValue in
+            print("newValue: \(newValue)")
         })
         
         
