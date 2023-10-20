@@ -11,16 +11,16 @@ import CoreMotion
 
 /*
  [ToDo]
-    추후 리팩토링 필요
+ 추후 리팩토링 필요
  */
 
 class PedometerViewModel: ObservableObject {
     let pedometer = CMPedometer()
     let now = Date().toInt()
-
+    
     @AppStorage("beforeDate") var beforeDate: Int = (UserDefaults.standard.integer(forKey: "beforeDate"))
-
-    @Published var steps: Int?
+    
+    @AppStorage("steps") var steps: Int = (UserDefaults.standard.integer(forKey: "steps"))
     
     var isPedometerAvailable: Bool {
         return CMPedometer.isPedometerEventTrackingAvailable() && CMPedometer.isDistanceAvailable() && CMPedometer.isStepCountingAvailable()
@@ -28,7 +28,7 @@ class PedometerViewModel: ObservableObject {
     
     func initializePedometer() {
         print("initializePedometer() 호출")
-                        
+        
         if beforeDate == 0 {
             // 초기값 설정
             beforeDate = now
@@ -48,7 +48,7 @@ class PedometerViewModel: ObservableObject {
             pedometer.queryPedometerData(from: startDate, to: Date()) { (data, error) in
                 guard let data = data, error == nil else { return }
                 
-                self.steps = data.numberOfSteps.intValue    // 걸음 수 저장
+                self.steps = Int(Double(data.numberOfSteps.intValue) * 0.1) // 걸음 수 저장
                 self.updateBeforeDate()
             }
         }
@@ -57,7 +57,7 @@ class PedometerViewModel: ObservableObject {
     // MARK: 걷기 경험치 초기화하는 메서드
     func clearExp() {
         print("clearExp() 호출")
-
+        
     }
     
     // MARK: beforeDate 업데이트하는 메서드
