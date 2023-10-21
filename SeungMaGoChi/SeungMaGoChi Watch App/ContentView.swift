@@ -12,16 +12,17 @@ struct ContentView: View {
     @ObservedObject var pedometerViewModel = PedometerViewModel()
 
     @AppStorage("lastClicked") private var lastClickedInterval: TimeInterval = .zero
-    @AppStorage("steps") var steps: Int = (UserDefaults.standard.integer(forKey: "steps"))
+    @AppStorage("exp") var exp: Int = (UserDefaults.standard.integer(forKey: "exp"))
 
     @State private var isButtonDisabled = false
+    @State private var imageSource = "star"
     
     var body: some View {
         VStack {
             HStack {
                 Spacer()
                 Button(action: {
-                    steps += 100
+                    exp += 100
                     self.setLastClickedDate(date: Date()) // 현재 시간 저장
                     checkButtonStatus()
                 }) {
@@ -34,10 +35,10 @@ struct ContentView: View {
             }
             Button(action: {
                 withAnimation(.easeInOut(duration: 1.0)) { // 원하는 애니메이션 지속 시간 설정
-                    steps += 1
+                    exp += 1
                 }
             }) {
-                Image(systemName: steps > 10 ? "star.fill" : "star")
+                Image(systemName: imageSource)
                     .resizable()
                     .scaledToFit()
             }
@@ -50,8 +51,11 @@ struct ContentView: View {
             }
             checkButtonStatus()
         })
-        .onChange(of: steps, perform: { newValue in
+        .onChange(of: exp, perform: { newValue in
             print("newValue: \(newValue)")
+            if newValue > 10 {
+                imageSource = "star.fill"
+            }
         })
         
         
