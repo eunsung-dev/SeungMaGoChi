@@ -20,7 +20,7 @@ class PedometerViewModel: ObservableObject {
     
     @AppStorage("beforeDate") var beforeDate: Int = (UserDefaults.standard.integer(forKey: "beforeDate"))
     
-    @AppStorage("steps") var steps: Int = (UserDefaults.standard.integer(forKey: "steps"))
+    @AppStorage("exp") var exp: Int = (UserDefaults.standard.integer(forKey: "exp"))
     
     var isPedometerAvailable: Bool {
         return CMPedometer.isPedometerEventTrackingAvailable() && CMPedometer.isDistanceAvailable() && CMPedometer.isStepCountingAvailable()
@@ -48,7 +48,7 @@ class PedometerViewModel: ObservableObject {
             pedometer.queryPedometerData(from: startDate, to: Date()) { (data, error) in
                 guard let data = data, error == nil else { return }
                 
-                self.steps = Int(Double(data.numberOfSteps.intValue) * 0.1) // 걸음 수 저장
+                self.exp = Int(Double(data.numberOfSteps.intValue) * 0.1) // 걸음 수 저장
                 self.updateBeforeDate()
             }
         }
