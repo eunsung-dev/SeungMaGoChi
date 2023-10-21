@@ -10,12 +10,14 @@ import CoreMotion
 
 struct ContentView: View {
     @ObservedObject var pedometerViewModel = PedometerViewModel()
-
+    
     @AppStorage("lastClicked") private var lastClickedInterval: TimeInterval = .zero
     @AppStorage("exp") var exp: Int = (UserDefaults.standard.integer(forKey: "exp"))
-
+    
     @State private var isButtonDisabled = false
-    @State private var imageSource = "star"
+    @State private var characterSource = "characterLv1"
+    private let feedSource = "carrot"
+    private let backgroundSource = "background"
     
     var body: some View {
         VStack {
@@ -26,11 +28,11 @@ struct ContentView: View {
                     self.setLastClickedDate(date: Date()) // 현재 시간 저장
                     checkButtonStatus()
                 }) {
-                    Circle()
-                        .fill(.blue)
+                    Image(feedSource)
+                        .resizable()
+                        .frame(width: 40, height: 40)
                 }
                 .buttonStyle(PlainButtonStyle())
-                .frame(width: 35, height: 35)
                 .disabled(isButtonDisabled)
             }
             Button(action: {
@@ -38,11 +40,11 @@ struct ContentView: View {
                     exp += 1
                 }
             }) {
-                Image(systemName: imageSource)
+                Image(characterSource)
                     .resizable()
                     .scaledToFit()
             }
-            .clipShape(Circle())
+            .buttonStyle(PlainButtonStyle())
         }
         .padding()
         .onAppear(perform:{
@@ -53,10 +55,15 @@ struct ContentView: View {
         })
         .onChange(of: exp, perform: { newValue in
             print("newValue: \(newValue)")
-            if newValue > 10 {
-                imageSource = "star.fill"
+            if newValue > 10000 {
+                characterSource = "characterLv1"    // [ToDo] 이미지 수정
             }
         })
+        .background(
+            Image(backgroundSource)
+                .resizable()
+                .ignoresSafeArea()
+        )
         
         
     }
@@ -69,6 +76,7 @@ struct ContentView: View {
         return Date(timeIntervalSince1970:lastClickedInterval)
     }
     
+    // MARK: 버튼 활성화 여부 체크하는 메서드
     func checkButtonStatus() {
         let timeSinceLastClick = Date().timeIntervalSince(getLastClickedDate())
         
